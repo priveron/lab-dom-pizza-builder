@@ -103,7 +103,7 @@ function renderButtons() {
 function renderPrice() {
   // Iteration 4: change the HTML of `<aside class="panel price">`
     let list = document.querySelector('.panel.price ul');
-    list.innerHTML = "";
+    list.innerHTML = '';
     let price = Object.keys(ingredients).reduce((total, key) => {
         if (state[key]) {
             list.innerHTML += `<li>$${ingredients[key].price} ${ingredients[key].name}</li>`;
